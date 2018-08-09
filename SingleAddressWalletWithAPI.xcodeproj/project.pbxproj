@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0C1DD5C2211C19DB004BA8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5C1211C19DB004BA8A8 /* AppDelegate.swift */; };
-		0C1DD5C4211C19DB004BA8A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5C3211C19DB004BA8A8 /* ViewController.swift */; };
+		0C1DD5C4211C19DB004BA8A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5C3211C19DB004BA8A8 /* HomeViewController.swift */; };
 		0C1DD5C7211C19DB004BA8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1DD5C5211C19DB004BA8A8 /* Main.storyboard */; };
 		0C1DD5C9211C19DC004BA8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1DD5C8211C19DC004BA8A8 /* Assets.xcassets */; };
 		0C1DD5CC211C19DC004BA8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1DD5CA211C19DC004BA8A8 /* LaunchScreen.storyboard */; };
-		0C1DD5D7211C19DC004BA8A8 /* SingleAddressWalletWithAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5D6211C19DC004BA8A8 /* SingleAddressWalletWithAPITests.swift */; };
-		0C1DD5E2211C19DC004BA8A8 /* SingleAddressWalletWithAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5E1211C19DC004BA8A8 /* SingleAddressWalletWithAPIUITests.swift */; };
+		0C1DD5F0211C1AE5004BA8A8 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5EF211C1AE5004BA8A8 /* AppController.swift */; };
+		0C1DD5F2211C1AFE004BA8A8 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5F1211C1AFE004BA8A8 /* SendViewController.swift */; };
+		0C1DD5F4211C1B14004BA8A8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5F3211C1B14004BA8A8 /* APIClient.swift */; };
+		0C1DD5F6211C1B3B004BA8A8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5F5211C1B3B004BA8A8 /* Transaction.swift */; };
+		0C1DD5F8211C1B4B004BA8A8 /* UnspentOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1DD5F7211C1B4B004BA8A8 /* UnspentOutput.swift */; };
+		0C1DD5FB211C1FCE004BA8A8 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1DD5FA211C1FCE004BA8A8 /* KeychainAccess.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +40,19 @@
 /* Begin PBXFileReference section */
 		0C1DD5BE211C19DB004BA8A8 /* SingleAddressWalletWithAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleAddressWalletWithAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C1DD5C1211C19DB004BA8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C1DD5C3211C19DB004BA8A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C1DD5C3211C19DB004BA8A8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0C1DD5C6211C19DB004BA8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C1DD5C8211C19DC004BA8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C1DD5CB211C19DC004BA8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C1DD5CD211C19DC004BA8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C1DD5D2211C19DC004BA8A8 /* SingleAddressWalletWithAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleAddressWalletWithAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C1DD5D6211C19DC004BA8A8 /* SingleAddressWalletWithAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAddressWalletWithAPITests.swift; sourceTree = "<group>"; };
-		0C1DD5D8211C19DC004BA8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C1DD5DD211C19DC004BA8A8 /* SingleAddressWalletWithAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleAddressWalletWithAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C1DD5E1211C19DC004BA8A8 /* SingleAddressWalletWithAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAddressWalletWithAPIUITests.swift; sourceTree = "<group>"; };
-		0C1DD5E3211C19DC004BA8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1DD5EF211C1AE5004BA8A8 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		0C1DD5F1211C1AFE004BA8A8 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		0C1DD5F3211C1B14004BA8A8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		0C1DD5F5211C1B3B004BA8A8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		0C1DD5F7211C1B4B004BA8A8 /* UnspentOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnspentOutput.swift; sourceTree = "<group>"; };
+		0C1DD5FA211C1FCE004BA8A8 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1DD5FB211C1FCE004BA8A8 /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				0C1DD5C0211C19DB004BA8A8 /* SingleAddressWalletWithAPI */,
-				0C1DD5D5211C19DC004BA8A8 /* SingleAddressWalletWithAPITests */,
-				0C1DD5E0211C19DC004BA8A8 /* SingleAddressWalletWithAPIUITests */,
 				0C1DD5BF211C19DB004BA8A8 /* Products */,
+				0C1DD5F9211C1FCE004BA8A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				0C1DD5C1211C19DB004BA8A8 /* AppDelegate.swift */,
-				0C1DD5C3211C19DB004BA8A8 /* ViewController.swift */,
+				0C1DD5EF211C1AE5004BA8A8 /* AppController.swift */,
+				0C1DD5C3211C19DB004BA8A8 /* HomeViewController.swift */,
+				0C1DD5F1211C1AFE004BA8A8 /* SendViewController.swift */,
+				0C1DD5F3211C1B14004BA8A8 /* APIClient.swift */,
+				0C1DD5F5211C1B3B004BA8A8 /* Transaction.swift */,
+				0C1DD5F7211C1B4B004BA8A8 /* UnspentOutput.swift */,
 				0C1DD5C5211C19DB004BA8A8 /* Main.storyboard */,
 				0C1DD5C8211C19DC004BA8A8 /* Assets.xcassets */,
 				0C1DD5CA211C19DC004BA8A8 /* LaunchScreen.storyboard */,
@@ -107,22 +118,12 @@
 			path = SingleAddressWalletWithAPI;
 			sourceTree = "<group>";
 		};
-		0C1DD5D5211C19DC004BA8A8 /* SingleAddressWalletWithAPITests */ = {
+		0C1DD5F9211C1FCE004BA8A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C1DD5D6211C19DC004BA8A8 /* SingleAddressWalletWithAPITests.swift */,
-				0C1DD5D8211C19DC004BA8A8 /* Info.plist */,
+				0C1DD5FA211C1FCE004BA8A8 /* KeychainAccess.framework */,
 			);
-			path = SingleAddressWalletWithAPITests;
-			sourceTree = "<group>";
-		};
-		0C1DD5E0211C19DC004BA8A8 /* SingleAddressWalletWithAPIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0C1DD5E1211C19DC004BA8A8 /* SingleAddressWalletWithAPIUITests.swift */,
-				0C1DD5E3211C19DC004BA8A8 /* Info.plist */,
-			);
-			path = SingleAddressWalletWithAPIUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +136,7 @@
 				0C1DD5BA211C19DB004BA8A8 /* Sources */,
 				0C1DD5BB211C19DB004BA8A8 /* Frameworks */,
 				0C1DD5BC211C19DB004BA8A8 /* Resources */,
+				0C1DD5FC211C1FD6004BA8A8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,13 +253,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C1DD5FC211C1FD6004BA8A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C1DD5BA211C19DB004BA8A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1DD5C4211C19DB004BA8A8 /* ViewController.swift in Sources */,
+				0C1DD5F2211C1AFE004BA8A8 /* SendViewController.swift in Sources */,
+				0C1DD5C4211C19DB004BA8A8 /* HomeViewController.swift in Sources */,
+				0C1DD5F6211C1B3B004BA8A8 /* Transaction.swift in Sources */,
 				0C1DD5C2211C19DB004BA8A8 /* AppDelegate.swift in Sources */,
+				0C1DD5F4211C1B14004BA8A8 /* APIClient.swift in Sources */,
+				0C1DD5F0211C1AE5004BA8A8 /* AppController.swift in Sources */,
+				0C1DD5F8211C1B4B004BA8A8 /* UnspentOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1DD5D7211C19DC004BA8A8 /* SingleAddressWalletWithAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1DD5E2211C19DC004BA8A8 /* SingleAddressWalletWithAPIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +454,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27ZF65ZF69;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SingleAddressWalletWithAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +476,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27ZF65ZF69;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SingleAddressWalletWithAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
